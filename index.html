@@ -17,7 +17,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: black;
+            background-color: black; /* Fondo completamente negro */
             color: white;
             text-align: center;
             flex-direction: column;
@@ -47,12 +47,11 @@
             width: 100%;
             height: 100%;
             z-index: -1; /* Envía el contador detrás del contenido */
-            background-color: rgba(128, 128, 128, 0.2); /* Gris medio transparente */
             display: flex;
             justify-content: center;
             align-items: center;
             font-size: 10vw; /* Tamaño del texto del contador */
-            color: rgba(255, 255, 255, 0.3); /* Blanco translúcido */
+            color: rgba(255, 255, 255, 0.1); /* Blanco muy translúcido para un efecto sutil */
         }
     </style>
 </head>
@@ -97,7 +96,7 @@
         // Si la cuenta atrás ha terminado, muestra un mensaje
         if (distance < 0) {
             clearInterval(countdownFunction);
-            document.getElementById("countdown-background").innerHTML = "La espera ha terminado, el proecto ONARU nace.";
+            document.getElementById("countdown-background").innerHTML = "La espera ha terminado, nace el Proyecto ONARU.";
         }
     }, 1000);
     </script>
