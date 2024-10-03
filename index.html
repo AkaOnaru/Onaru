@@ -53,6 +53,13 @@
             font-size: 10vw; /* Tamaño del texto del contador */
             color: rgba(255, 255, 255, 0.1); /* Blanco muy translúcido para un efecto sutil */
         }
+
+        /* Asegurarse de que la imagen PNG no tenga fondo y se ajuste correctamente */
+        img {
+            width: 700px;
+            height: auto;
+            background-color: transparent; /* Asegura que no haya fondo detrás de la imagen */
+        }
     </style>
 </head>
 <body>
@@ -67,7 +74,8 @@
     <!-- Contenedor para el contador inverso en el fondo -->
     <div id="countdown-background"></div>
 
-    <img src="logo.png" alt="ONARU Logo" style="width: 700px; height: auto;">
+    <!-- Logo con formato PNG transparente -->
+    <img src="logo.png" alt="ONARU Logo">
 
     <!-- Script para el contador inverso -->
     <script>
@@ -96,10 +104,11 @@
         // Si la cuenta atrás ha terminado, muestra un mensaje
         if (distance < 0) {
             clearInterval(countdownFunction);
-            document.getElementById("countdown-background").innerHTML = "La espera ha terminado, nace el Proyecto ONARU.";
+            document.getElementById("countdown-background").innerHTML = "La espera ha terminado, nace el Proyecto ONARU";
         }
     }, 1000);
     </script>
 
 </body>
 </html>
+
