@@ -29,18 +29,19 @@
 
         /* Fondo con palabras "onaru" ocupando toda la página */
         body::before {
-            content: "onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru ";
+            content: "onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru onaru";
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
             color: rgba(255, 255, 255, 0.02); /* Muy translúcido para un efecto sutil */
-            font-size: 5vw; /* Tamaño del texto de fondo */
+            font-size: 10vw; /* Aumenta el tamaño del texto de fondo */
             white-space: nowrap;
             display: flex;
             flex-wrap: wrap; /* Repite el texto en todo el fondo */
             z-index: -3; /* Asegura que el texto esté en el fondo, detrás del temporizador */
+            pointer-events: none; /* Evita que el texto de fondo interfiera con los eventos de puntero */
         }
 
         h1 {
