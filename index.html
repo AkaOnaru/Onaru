@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ONARU</title>
     <style>
+        @font-face {
+            font-family: 'Coco Biker';
+            src: url('ruta-del-archivo/CocoBiker.ttf') format('truetype'); /* Cambia esto por la ruta del archivo de fuente */
+        }
+
         body {
             margin: 0;
             height: 100vh;
@@ -13,7 +18,7 @@
             align-items: center;
             background-color: black;
             color: white;
-            font-family: Arial, sans-serif;
+            font-family: 'Coco Biker', sans-serif; /* Usa la fuente Coco Biker */
             text-align: center;
             flex-direction: column;
         }
@@ -27,7 +32,8 @@
             margin-bottom: 40px;
         }
 
-
+        img {
+            max-width: 500px; /* Ajusta el tamaño del logo si es necesario */
         }
     </style>
 </head>
@@ -39,7 +45,7 @@
        ONARU© begins------ be prepared🕳️
     </p>
 
-
+    <img src="ruta-del-logo.png" alt="ONARU Logo"> <!-- Cambia esto por la ruta de tu logo -->
 
 </body>
 </html>
